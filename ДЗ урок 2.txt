@@ -1,0 +1,41 @@
+ubuntu@ip-172-31-47-169:~$ mkdir first
+ubuntu@ip-172-31-47-169:~$ mkdir second
+ubuntu@ip-172-31-47-169:~$ ls
+first  second  test.txt
+ubuntu@ip-172-31-47-169:~$ rm test.txt
+ubuntu@ip-172-31-47-169:~$ ls
+first  second
+ubuntu@ip-172-31-47-169:~$ echo > first.py
+ubuntu@ip-172-31-47-169:~$ ls
+first  first.py  second
+ubuntu@ip-172-31-47-169:~$ echo "print("1")" >> first.py
+ubuntu@ip-172-31-47-169:~$ less first.py
+ubuntu@ip-172-31-47-169:~$ echo "1" > first.py
+ubuntu@ip-172-31-47-169:~$ echo > second.py
+ubuntu@ip-172-31-47-169:~$ echo "2" > second.py
+ubuntu@ip-172-31-47-169:~$ less second.py
+ubuntu@ip-172-31-47-169:~$ ls
+first  first.py  second  second.py
+ubuntu@ip-172-31-47-169:~$ cp first.py first
+ubuntu@ip-172-31-47-169:~$ cp second.py second
+ubuntu@ip-172-31-47-169:~$ ls
+first  first.py  second  second.py
+ubuntu@ip-172-31-47-169:~$ ls first
+first.py
+ubuntu@ip-172-31-47-169:~$ rm first.py
+ubuntu@ip-172-31-47-169:~$ rm second.py
+ubuntu@ip-172-31-47-169:~$ ls first
+first.py
+ubuntu@ip-172-31-47-169:~$ mv second/second.py first/
+ubuntu@ip-172-31-47-169:~$ ls second
+ubuntu@ip-172-31-47-169:~$ rm -r second
+ubuntu@ip-172-31-47-169:~$ ls
+first
+ubuntu@ip-172-31-47-169:~$ ls first
+first.py  second.py
+ubuntu@ip-172-31-47-169:~$ mv first/ first_second/
+ubuntu@ip-172-31-47-169:~$ ls
+first_second
+ubuntu@ip-172-31-47-169:~$ rm -r first_second
+ubuntu@ip-172-31-47-169:~$ ls
+ubuntu@ip-172-31-47-169:~$
